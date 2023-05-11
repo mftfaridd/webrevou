@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+.subtitle{
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.header-wrapped {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px #000000;
+  align-items: center;
+  padding: 16px 24px;
+
+}
+
+ .header-wrapped > .menu{
+  display: flex;
+ }
+
+ .header-wrapped .menu button{
+  background-color: white;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: 0.3s
+ }
+ 
+main {
+  padding-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banner{
+  align-items: center;
+}
+
+.banner img{
+  width: 85%;
+  position: relative;
+  padding-right: 5px;
+}
+
+.banner h3{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.content {
+  flex: 3;
+  width: 75%;
+  padding: 50px;
+}
+
+.content h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar {
+  flex: 1;
+  width: 25%;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+aside {
+  width: 25%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  float: right;
+}
+
+aside h2 {
+  margin-top: 0;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.product ul{
+  padding-top: 20px;
+  left: 30px;
+  text-align: left;
+}
+
+.product h3{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+.contact{
+  padding-top: 20px;
+  text-align: center;
+}
+
+.contact h3{
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+  .menu{
+    flex-direction: column;
+  }
+
+  .header-wrapped{
+    flex-direction: column;
+  }
+
+}
